@@ -1,11 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const home = () => {
-  return (
-    <div>
-      TILPJ
-    </div>
-  )
-}
+const home = () => <div>TILPJ</div>;
 
 export default home;

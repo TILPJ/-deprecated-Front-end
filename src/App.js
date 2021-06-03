@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './styles/main.scss';
+import './index.css';
 
 import Home from './containers/Home';
 
