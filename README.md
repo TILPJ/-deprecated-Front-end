@@ -1,5 +1,5 @@
 ### ESLint
-__airbnb ESLing__
+__airbnb ESLint__
 
 ### Font
 __SpoqaHanSansNeo__
