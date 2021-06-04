@@ -9,9 +9,16 @@ module.exports = {
     ecmaVersion: 11,
   },
   rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.js', '.jsx'],
+      },
+    ],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    'object-curly-newline': ['error', { multiline: true, minProperties: 4 }],
+    'object-curly-newline': 0,
+    'import/no-unresolved': 0,
+    'no-unused-vars': 0,
   },
 };
