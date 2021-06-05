@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Button from '@material-ui/core/Button';
 import { Typography } from '@material-ui/core';
 
+import LoginButton from '../../components/Home/LoginButton';
 import LoginForm from '../../components/Home/LoginForm';
 import Background from '../../components/Home/Background';
 import useStyles from './useStyles';
@@ -18,22 +18,11 @@ const Home = () => {
   return (
     <>
       <Background />
-      {/* {!isLoginFormOpen ? (
-        <>
-          <Button
-            variant="outlined"
-            color="primary"
-            onClick={handleLoginFormOpen}
-          >
-            Login
-          </Button>
-        </>
+      {!isLoginFormOpen ? (
+        <LoginButton handleLoginFormOpen={handleLoginFormOpen} />
       ) : (
         <LoginForm />
-      )} */}
-      <Button variant="outlined" color="primary" onClick={handleLoginFormOpen}>
-        로그인하기
-      </Button>
+      )}
     </>
   );
 };

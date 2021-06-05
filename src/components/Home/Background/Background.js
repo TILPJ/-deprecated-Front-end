@@ -11,22 +11,22 @@ const Background = () => {
   return (
     <div className={classes.container}>
       <Grid container justify="space-between">
-        <GridList item>
+        <GridList className={classes.firstColumn} item>
           <NormalCard name="coursera" bgColor="#0055d3" />
         </GridList>
-        <GridList item>
+        <GridList className={classes.secondColumn} item>
           <NormalCard name="inflearn" bgColor="#40b349" />
         </GridList>
-        <GridList item>
+        <GridList className={classes.thirdColumn} item>
           <NormalCard name="udemy" bgColor="#dcdacb" />
         </GridList>
-        <GridList item>
+        <GridList className={classes.fourthColumn} item>
           <NormalCard name="programmers" bgColor="#0c151b" />
         </GridList>
-        <GridList item>
+        <GridList className={classes.fifthColumn} item>
           <NormalCard name="udacity" bgColor="#02b3e4" />
         </GridList>
-        <GridList item>
+        <GridList className={classes.sixthColumn} item>
           <NormalCard name="edwith" bgColor="#fff" />
         </GridList>
       </Grid>

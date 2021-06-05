@@ -16,8 +16,8 @@ const loginform = () => {
   const classes = useStyles();
 
   return (
-    <Container component="main" maxWidth="xs">
-      <div className={classes.paper}>
+    <Container className={classes.container} component="div" maxWidth="xs">
+      <div className={classes.inner}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
         </Avatar>

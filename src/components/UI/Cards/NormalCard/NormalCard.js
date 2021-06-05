@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -28,7 +28,7 @@ NormalCard.propTypes = {
   bgColor: PropTypes.string,
 };
 NormalCard.defaultProps = {
-  bgColor: 'red',
+  bgColor: '#fff',
 };
 
 export default NormalCard;
