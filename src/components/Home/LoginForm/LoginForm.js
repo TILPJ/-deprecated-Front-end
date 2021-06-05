@@ -8,7 +8,6 @@ import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
 
 import useStyles from './useStyles';
 
@@ -16,7 +15,7 @@ const loginform = () => {
   const classes = useStyles();
 
   return (
-    <Container className={classes.container} component="div" maxWidth="xs">
+    <div className={classes.container}>
       <div className={classes.inner}>
         <Avatar className={classes.avatar}>
           <LockOutlinedIcon />
@@ -74,7 +73,7 @@ const loginform = () => {
           </Grid>
         </form>
       </div>
-    </Container>
+    </div>
   );
 };
 

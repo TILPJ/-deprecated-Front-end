@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Typography } from '@material-ui/core';
 
+import Background from '../../components/Home/Background';
+
+import Title from '../../components/Home/Title';
 import LoginButton from '../../components/Home/LoginButton';
 import LoginForm from '../../components/Home/LoginForm';
-import Background from '../../components/Home/Background';
 import useStyles from './useStyles';
 
 const Home = () => {
@@ -19,7 +20,10 @@ const Home = () => {
     <>
       <Background />
       {!isLoginFormOpen ? (
-        <LoginButton handleLoginFormOpen={handleLoginFormOpen} />
+        <>
+          <Title />
+          <LoginButton handleLoginFormOpen={handleLoginFormOpen} />
+        </>
       ) : (
         <LoginForm />
       )}
